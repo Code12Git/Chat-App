@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
 const { userModel } = require("../models");
 const { CONFLICT, USER_NOT_FOUND } = require("../utils/errors");
+const {AppError} = require("../utils");
 const bcrypt = require("bcryptjs");
 
 const register = async (body) => {
